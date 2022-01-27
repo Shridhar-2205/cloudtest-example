@@ -1,0 +1,6 @@
+Dec 14 22:28:44.544[36m [INFO] [0mdestroy-0: make kind-stop
+ENV={
+
+}
+
+Deleting cluster "kind-1" ...

@@ -1,0 +1,3 @@
+go test . --list .*
+TestAdd
+ok  	/home/ubuntu/go/src/cloudtest_repo/tests	0.002s

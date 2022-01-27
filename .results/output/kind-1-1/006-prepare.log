@@ -1,0 +1,8 @@
+Dec 14 22:28:44.128[36m [INFO] [0mprepare: kubectl get pods -A --kubeconfig=${CONFIG_LOCATION}
+ENV={
+KUBECONFIG=/home/ubuntu/go/src/cloudtest_repo/.results/output/shell/kind-1-1/config
+
+}
+
+NAMESPACE     NAME                        READY   STATUS    RESTARTS   AGE
+kube-system   etcd-kind-1-control-plane   0/1     Pending   0          5s

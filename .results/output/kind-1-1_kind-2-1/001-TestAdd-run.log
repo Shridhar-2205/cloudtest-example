@@ -1,0 +1,14 @@
+Starting TestAdd on kind-1-1_kind-2-1
+Command line go test . -test.timeout 12m0s -count 1 --run "^(TestAdd)$\\z" --tags "" --test.v
+env==[KUBECONFIG1=/home/ubuntu/go/src/cloudtest_repo/.results/output/shell/kind-1-1/config KUBECONFIG2=/home/ubuntu/go/src/cloudtest_repo/.results/output/shell/kind-2-1/config ARTIFACTS_DIR=/home/ubuntu/go/src/cloudtest_repo/.results/output/kind-1-1_kind-2-1/TestAdd] 
+
+Before is empty script. Nothing to run
+Before is empty script. Nothing to run
+Before is empty script. Nothing to run
+Before is empty script. Nothing to run
+=== RUN   TestAdd
+Kubeconfig for first cluster: /home/ubuntu/go/src/cloudtest_repo/.results/output/shell/kind-1-1/config
+Kubeconfig for second cluster: /home/ubuntu/go/src/cloudtest_repo/.results/output/shell/kind-2-1/config
+--- PASS: TestAdd (0.00s)
+PASS
+ok  	/home/ubuntu/go/src/github.com/xyz-app-networking/cloudtest_repo/tests	0.002s

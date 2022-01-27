@@ -1,0 +1,75 @@
+$ cloudtest --config=.cloudtest.yaml
+Dec 14 22:43:36.252 [INFO] configuration file loaded successfully...
+Dec 14 22:43:36.252 [INFO] Cleaning report folder ./.results/output/
+Dec 14 22:43:36.253 [INFO] Finding tests
+Dec 14 22:43:36.253 [INFO] Starting finding tests by source {[] []}
+Dec 14 22:43:36.512 [INFO] Tests found: 1 Elapsed: 259.387483ms
+Dec 14 22:43:36.512 [INFO] Total tests found: 1
+Dec 14 22:43:36.512 [INFO] Cleaning report folder /home/ubuntu/go/src/examples/cloudtest-example/.results/output/packet
+Dec 14 22:43:36.512 [INFO] Cleaning report folder /home/ubuntu/go/src/examples/cloudtest-example/.results/output/shell
+Dec 14 22:43:36.512 [INFO] Initialize provider for config: kind-1 shell
+Dec 14 22:43:36.512 [INFO] Creating 1 instances of 'kind-1' cluster to run 1 test(s)
+Dec 14 22:43:36.512 [INFO] Initialize provider for config: kind-2 shell
+Dec 14 22:43:36.512 [INFO] Creating 1 instances of 'kind-2' cluster to run 1 test(s)
+Dec 14 22:43:36.512 [INFO] Starting test execution
+Dec 14 22:43:36.513 [INFO] Starting cluster kind-2-kind-2-1
+Dec 14 22:43:36.513 [INFO] Starting cluster kind-1-kind-1-1
+Dec 14 22:43:36.514 [INFO] start: kind-2-1 => make kind-start
+Dec 14 22:43:36.514 [INFO] start: kind-1-1 => make kind-start
+Dec 14 22:44:06.513 [INFO] Statistics:
+        Elapsed total: 30s
+        Tests time: 30s
+        Tasks  Completed: 0
+               Remaining: 1 (~)
+
+        Clusters:
+                Cluster: kind-1 Tasks left: 1
+                        kind-1-1: starting, uptime: 30s
+                Cluster: kind-2 Tasks left: 1
+                        kind-2-1: starting, uptime: 30s
+
+        Status  Passed: 0
+        Status  Failed: 0
+        Status  Timeout: 0
+        Status  Skipped: 0
+Dec 14 22:44:14.506 [INFO] config: kind-2-1 => make kind-export-kubeconfig
+Dec 14 22:44:15.286 [INFO] prepare: kind-2-1 => kubectl get pods -A --kubeconfig=${CONFIG_LOCATION}
+Dec 14 22:44:15.476 [INFO] Waiting for desired number of nodes complete kind-2-kind-2-1 13.166199ms
+Dec 14 22:44:15.479 [INFO] Cluster instance started: kind-2-1
+Dec 14 22:44:15.479 [INFO] Cluster instance kind-2-1 is updated: state: ready
+Dec 14 22:44:15.487 [INFO] config: kind-1-1 => make kind-export-kubeconfig
+Dec 14 22:44:16.240 [INFO] prepare: kind-1-1 => kubectl get pods -A --kubeconfig=${CONFIG_LOCATION}
+Dec 14 22:44:16.399 [INFO] Waiting for desired number of nodes complete kind-1-kind-1-1 8.985958ms
+Dec 14 22:44:16.401 [INFO] Cluster instance started: kind-1-1
+Dec 14 22:44:16.401 [INFO] Cluster instance kind-1-1 is updated: state: ready
+Dec 14 22:44:16.401 [INFO] Starting TestAdd on kind-1-1_kind-2-1
+
+Dec 14 22:44:16.633 [INFO] Completed TestAdd on kind-1-1_kind-2-1, success, runtime: 0s
+Dec 14 22:44:16.634 [INFO] Finished test execution
+Dec 14 22:44:16.634 [INFO] Statistics:
+        Elapsed total: 40s
+        Tests time: 1s
+        Tasks  Completed: 1
+               Remaining: 0 (~0s)
+
+        Clusters:
+                Cluster: kind-1 Tasks left: 0
+                        kind-1-1: ready, uptime: 0s
+                Cluster: kind-2 Tasks left: 0
+                        kind-2-1: ready, uptime: 1s
+
+        Status  Passed: 1
+        Status  Failed: 0
+        Status  Timeout: 0
+        Status  Skipped: 0
+Dec 14 22:44:16.634 [INFO] Schedule Closing cluster kind-1 kind-1-1
+Dec 14 22:44:16.634 [INFO] Schedule Closing cluster kind-2 kind-2-1
+Dec 14 22:44:16.634 [INFO] Closing cluster kind-2 kind-2-1
+Dec 14 22:44:16.634 [INFO] Destroying cluster  kind-2-1
+Dec 14 22:44:16.634 [INFO] cluster monitoring is canceled: kind-2-1. Uptime: 5 seconds
+Dec 14 22:44:16.634 [INFO] Closing cluster kind-1 kind-1-1
+Dec 14 22:44:16.634 [INFO] Destroying cluster  kind-1-1
+Dec 14 22:44:16.634 [INFO] destroy-0: kind-2-1 => make kind-stop
+Dec 14 22:44:16.634 [INFO] destroy-0: kind-1-1 => make kind-stop
+Dec 14 22:44:16.634 [INFO] cluster monitoring is canceled: kind-1-1. Uptime: 5 seconds
+Dec 14 22:44:17.961 [INFO] All clusters destroyed

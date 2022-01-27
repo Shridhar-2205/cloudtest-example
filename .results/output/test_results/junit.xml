@@ -1,0 +1,15 @@
+  <testsuites>
+      <testsuite tests="1" failures="0" time="0.242277626" name="All tests">
+          <properties></properties>
+          <!--Suite was running for 0s-->
+          <testsuite tests="1" failures="0" time="0.242277626" name="Test Suite 1GG">
+              <properties></properties>
+              <!--Suite was running for 0s-->
+              <testsuite tests="1" failures="0" time="0.242277626" name="kind-1-kind-2">
+                  <properties></properties>
+                  <!--Suite was running for 0s-->
+                  <testcase classname="" name="TestAdd" time="0.242277626" cluster_instance="kind-1-1_kind-2-1"></testcase>
+              </testsuite>
+          </testsuite>
+      </testsuite>
+  </testsuites>

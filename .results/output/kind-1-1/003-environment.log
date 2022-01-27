@@ -1,0 +1,2 @@
+KIND_CLUSTER_NAME=kind-1
+CONFIG_LOCATION=/home/ubuntu/go/src/cloudtest_repo/.results/output/shell/kind-1-1/config

@@ -1,0 +1,7 @@
+Dec 14 22:28:44.545[36m [INFO] [0mdestroy-0: make kind-stop
+ENV={
+
+}
+
+Deleting cluster "kind-2" ...
+failed to update kubeconfig: failed to lock config file: open /home/ubuntu/.kube/config.lock: file exists
